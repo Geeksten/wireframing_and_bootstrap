@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+    <!--<link href="geeksten.css" rel="stylesheet">-->
+    <style>
+		.glyphicon {
+    		font-size: 24px;
+		}
+
+		section {
+		    margin-top: 50px;
+		}
+
+		#login {
+		    margin: 20px;
+		}
+
+		.btn {
+		    margin-top: 10px;
+		}
+
+	</style>
+
+	</head>
+
+<body>
+
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            		<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+          		</button><!--end button -->
+      			<a class="navbar-brand" href="#">
+        			<img alt="Brand" src="placeholder-image.png" height="35" width="70">
+      			</a>
+      		</div><!-- end div class nav bar header-->
+      		<div id="navbar" class="collapse navbar-collapse">
+          		<ul class="nav navbar-nav">
+            		<li><a href="#about">About</a></li>
+          		</ul>
+          		<ul class="nav navbar-nav navbar-right">
+           			<li data-toggle="modal"
+           				data-target=".bs-example-modal-sm"><a href="#">Login</a></li>
+            		<li><a href="#Profile">Profile</a></li>
+         		</ul>
+        	</div><!--id="navbar" class="collapse navbar-collapse" -->
+  		</div><!--end div class=container-fluid-->
+	</nav> 
+
+		<!-- End of navbar -->
+
+
+	<!-- Here's The Modal Window for your login. -->
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	  <div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		    	<form id="login">
+					<div class="form-group">
+				    	<label class="sr-only" for="exampleInputEmail3">Email address</label>
+				    		<input type="email" class="form-control" id="email" placeholder="Email">
+				  	</div><!--div class="form-group"> -->
+				  	<div class="form-group">
+				    	<label class="sr-only" for="exampleInputPassword3">Password</label>
+				    		<input type="password" class="form-control" id="password" placeholder="Password">
+				  	</div><!--<div class="form-group"> -->
+				  		<button type="submit" class="btn btn-default">Log in</button>
+				</form>
+		    </div><!--<div class="modal-content"> -->
+	  	</div> <!-- class="modal-dialog modal-sm">-->
+	</div><!-- class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">-->
+
+	<!-- Body of Page -->
+
+	<!-- It's container-fluid so it spans the whole page. -->
+	<div class="container-fluid content">
+	<!-- Row for center text-->
+        <div class="row">
+            <section class="col-xs-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis tortor nec dictum posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam euismod consectetur lectus commodo ornare. Integer vitae lorem eget felis placerat sodales. Quisque rhoncus erat quis sodales blandit. onsequat porttitor quis ac risus. Mauris tincidunt convallis augue, non faucibus tellus lacinia eu. 
+                </p>
+            </section> <!-- end class="col-xs-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">-->
+		</div><!-- end of div class="row"-->
+<!-- End of centered main text. -->
+
+<!-- Row for items to rate. -->		
+<!-- Code goes here. -->	
+        <div class="row itemrow">
+            <section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
+				<img src="placeholder-image.png" class="img-responsive" alt="Responsive image">
+				<a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non.</p>
+				<button class="btn btn-default" type="submit">Rate</button>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<img src="placeholder-image.png" class="img-responsive" alt="Responsive image">
+				<a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non.</p>
+				<button class="btn btn-default" type="submit">Rate</button>
+			</section>
+
+		</div>
+	<!-- End of Row One -->
+	<!-- Second Row for items to rate. -->		
+<!-- Code goes here. -->	
+        <div class="row itemrow">
+            <section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2 col-lg-offset-2">
+				<img src="placeholder-image.png" class="img-responsive" alt="Responsive image">
+				<a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non.</p>
+				<button class="btn btn-default" type="submit">Rate</button>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<img src="placeholder-image.png" class="img-responsive" alt="Responsive image">
+				<a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a><a href=""><span class="glyphicon glyphicon-star" aria-hidden="true"></span></a>
+			</section>
+
+			<section class="col-xs-12 col-sm-12 col-md-2 col-md-offset2 col-lg-2">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus ipsum. Integer iaculis tellus sem, sed aliquet eros fermentum non.</p>
+				<button class="btn btn-default" type="submit">Rate</button>
+			</section>
+
+		</div>
+	<!-- End of Row Two -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- You need this in order to use JS-based components in the 
+further study. Leave this at the bottom and code above it. -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+	<!-- Row for center text -->
+        
+
+
+
+
+	<!-- End of centered main text. -->
+
+	
+<!-- You need this in order to use JS-based components in the 
+further study. Leave this at the bottom and code above it. -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+	<!-- End of rated items row -->
+
+				
+    </div>
+
+
+<!-- You need this in order to use JS-based components.
+Leave this at the bottom and code above it. -->
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
